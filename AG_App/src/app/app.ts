@@ -11,4 +11,15 @@ import { Signup } from './signup/signup';
 })
 export class App {
   protected readonly title = signal('AG_App');
+  name:string = 'Manohar Yadav';
+
+  updateName(){
+    this.name='Hitesh Yadav';
+    this.sum(10 , 20 , 30);
+  }
+
+  sum(a:number , b: number , c:number){
+    // return a+b+c;
+    console.log(a+b+c);
+  }
 }
